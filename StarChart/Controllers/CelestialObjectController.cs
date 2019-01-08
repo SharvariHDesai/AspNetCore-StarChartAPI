@@ -113,7 +113,7 @@ namespace StarChart.Controllers
             }
         }
 
-        [HttpDelete("{id}}")]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var bob = _context.CelestialObjects.Where(p=>p.Id==id ||p.OrbitedObjectId==id);
